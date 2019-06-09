@@ -1,0 +1,16 @@
+
+#problem  (1)to print the year of a person when he will turn into 90
+
+from datetime import datetime
+name=input("enter your name")
+age=int(input("enter your age"))
+print("your curent year is\n")
+print(datetime.now().year)
+
+print("year you willturn 95 is")
+diff=90-age
+print("you will turn 90 in ")
+currentYear = datetime.now().year
+
+print(currentYear+diff)
+
