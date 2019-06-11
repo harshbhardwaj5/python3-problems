@@ -3,7 +3,7 @@ import crypt
  x=input("enter the input")
  if type(x)=='str':
     print("input is a string")
-    password="admin44"
+    password="hello(user)"
     enc=crypt.crypt(password,"redhat")    #this will create password for the user
     os.system("useradd -p "enc+" admin")
   else
