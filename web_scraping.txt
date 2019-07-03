@@ -1,0 +1,38 @@
+
+
+https://www.datacamp.com/community/tutorials/web-scraping-using-python#comments
+
+sudo pip3 install bs4
+sudo pip3 insatll requests
+sudo pip3 insatll lxml
+
+
+
+
+
+#now we apply web scraping  --beautiful soup
+
+
+
+
+https://www.datacamp.com/community/tutorials/web-scraping-using-python#comments
+
+
+------------------------------------simple web scraping basic example
+#!/usr/bin/python3
+import requests
+import bs4
+res=requests.get('https://github.com')            #creating a object of requests type it will request to acces the webpage
+#print(type(res))
+
+soup=bs4.BeautifulSoup(res.text,'lxml')     #converting the requests type to bs4 object and choosing any paraser format i.e. lxml
+print(type(soup))
+
+var=soup.select('a')         #printing all tags of a tag
+
+print(var)
+
+print(soup.find_all('title'))    #print title by extracting it
+print(var)
+~
+~
