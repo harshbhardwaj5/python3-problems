@@ -36,3 +36,27 @@ print(soup.find_all('title'))    #print title by extracting it
 print(var)
 ~
 ~
+-------------------for removing html tags from the data----------------
+we can use 
+1)get_text()
+2)text 
+
+import requests
+import bs4
+res=requests.get('https://github.com')
+#print(type(res))
+
+
+soup=bs4.BeautifulSoup(res.text,'lxml')
+
+
+p=soup.find('title')
+p1=p.get_text()       ----------->get_text()
+p2=p.text            ------------->text
+print(p1)
+print(p2)
+~
+~
+~
+~
+~
