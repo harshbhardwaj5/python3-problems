@@ -1,0 +1,31 @@
+#!/usr/bin/python3
+
+import sys,time
+
+nod=sys.argv[1]
+
+#this is string type data
+
+print(type(nod))
+
+#converting into integer  --typecast
+
+num=int(nod)
+
+#create a empty file to store data
+
+f=open('student.txt','w+')
+
+
+
+#apply for loop
+
+for i in range(num):
+	print(i,'jack'+str(i),'jack'+str(i)+'@adhocnew.org')
+	time.sleep(1)
+	f.write(str(i))
+	f.write(,)
+	f.write('jack'+str(i))
+	f.write('jack'+str(i),'@adhocmw.org')
+
+f.close()
